@@ -40,35 +40,20 @@ The code is organized to maintain reproducibility and clean data provenance:
 ├── notebook/
 │   └── Alau_Dam_Breach_Inundation_Modelling_v9.ipynb  <- Authoritative analytical notebook
 ├── datasets/
-│   ├── conditioned_dems/                              <- Hydro-conditioned, preprocessed rasters
-│   ├── dems/                                          <- Source DEM tiles (Copernicus / FABDEM)
-│   ├── satellite/                                     <- Sentinel-1 & Sentinel-2 input footprints
-│   └── c_EMSR753_flood_event/                         <- Copernicus EMS shapefile data
+│   ├── conditioned_dems/                              <- Hydro-conditioned, preprocessed rasters*
+│   ├── dems/                                          <- Source DEM tiles (Copernicus / FABDEM)*
+│   ├── satellite/                                     <- Sentinel-1 & Sentinel-2 input footprints*
+│   └── c_EMSR753_flood_event/                         <- Copernicus EMS shapefile data*
 └── alau_dam_inundation_outputs/                       <- Output root for generated products
-    ├── model_outputs/                                 <- Low/Med/High scenario depth & mask layers
+    ├── model_outputs/                                 <- Low/Med/High scenario depth & mask layers*
     ├── figures/                                       <- Validated susceptibility and maps
     └── tables/                                        <- Extracted validation metrics (CSV)
 ```
 
----
-
-## 🚀 Running the Workflow
-
-### 1. Prerequisites
-The workflow requires a standard scientific Python environment. Ensure you have the following geospatial libraries installed:
-```bash
-pip install numpy geopandas rasterio matplotlib jupyter
-```
-
-### 2. Preprocessing Note
-Initial DEM conditioning (projection, river burning, and sink filling) was conducted inside the **ILWIS (Integrated Land and Water Information System)** desktop environment to prepare the hydro-enforced terrain models. The final automated simulation and validation stages run strictly within the Python environment via the Jupyter Notebook.
-
-### 3. Execution
-1. Clone this repository.
-2. Launch Jupyter Notebook and open: `notebook/Alau_Dam_Breach_Inundation_Modelling_v9.ipynb`.
-3. The script will automatically resolve the root directories and execute the cell blocks sequentially.
-
----
+> **⚠️ Data Availability Note (\*):** Due to GitHub's strict file size constraints, heavy raw geospatial datasets (including high-resolution `.tif` rasters and raw `.zip` files) are excluded from this public repository clone to keep it lightweight. 
+> 
+> The code remains fully functional and structured to run out of the box if the directories are populated. For complete replication or peer-review data requests, the full authoritative data archive can be accessed directly via the institutional network storage at the University of Twente (ITC):
+> `\\ad.utwente.nl\itc\Archive\CourseData\Upload\Edeh_s3375730`
 
 ## 📜 License & Citation
 
