@@ -79,5 +79,5 @@ If you use this model or refer to the methodological findings in an academic con
 > **Edeh, C. J. (2026).** *Dam-Breach Inundation Modelling Using a Neighbourhood-Based Fill-and-Spill Inundation Model: A Case Study of Alau Dam, Maiduguri, Nigeria.* M.Sc. Thesis, Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente.
 
 ---
-📧 **Contact:** [Chioma Joy Edeh](mailto:c.j.edeh25@gmail.com) — [LinkedIn](https://linkedin.com/in/chioma49edeh)
+📧 **Contact:** [Chioma Joy Edeh](mailto:c.j.edeh25@gmail.com) or [Chioma Joy Edeh](mailto:edehchiomajoy@gmail.com) — [LinkedIn](https://linkedin.com/in/chioma49edeh)
 
